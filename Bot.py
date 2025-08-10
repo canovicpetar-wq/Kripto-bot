@@ -1,6 +1,6 @@
-import telebot
-
-# Tvoj bot token
+import os, telebot
+TOKEN = os.getenv("TOKEN")  # ne kucaj token u kod više
+bot = telebot.TeleBot(TOKEN)
 TOKEN = "8012141190:AAFFOB6s2pAv0EhYVjmdSOLdwsT6uUk8EEk"
 bot = telebot.TeleBot(TOKEN)
 
